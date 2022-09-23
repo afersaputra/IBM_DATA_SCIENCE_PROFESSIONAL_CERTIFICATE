@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/IDSNlogo.png" width="200" height="200">
+    <h2>Creating Repository in GitHub</h2>
+    <p><strong>Objectives of this Exercise</strong></p>
+    <ul>
+      <li>To create a repository in GitHub with README.md</li>
+      <li>To create a repository in GitHub without README.md</li>
+    </ul>
+    <p><em>Note: These instructions works on BASH terminal on Windows &#x26; Mac terminals.</em></p>
+    <h2>Exercise</h2>
+    <ol>
+      <li>Create a new repository (it’s a container where all stuff goes) using the + sign as shown below:</li>
+    </ol>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86895774-991bb480-c122-11ea-9e0a-0e6ab95c397b.png" alt="image">
+    </p>
+    <ol start="2">
+      <li>Provide the necessary details like repository name. Select repository as Public and initialize the READMD. Click ‘Create’.</li>
+    </ol>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86910859-f3734000-c137-11ea-89cd-763ad102f971.png" alt="image">
+    </p>
+    <p>Now, your repository is created, and it looks as:</p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86910903-0b4ac400-c138-11ea-89f8-4a39e7d3e459.png" alt="image">
+    </p>
+    <ol start="3">
+      <li>To download the repository, we have option'Download Zip' in 'Code'. Also, there are two options to copy repository locally using ‘SSH’ and ‘HTTPS’</li>
+    </ol>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86896805-2e6b7880-c124-11ea-9c3e-fc7b43a47cc9.png" alt="image">
+      <img src="https://user-images.githubusercontent.com/25001852/86896922-5d81ea00-c124-11ea-852a-d0dc5d9d135a.png" alt="image">
+    </p>
+    <ol start="4">
+      <li>
+        <p>Copy the SSHRepositoryLink on to your clipboard.</p>
+      </li>
+      <li>
+        <p>Open the command prompt or terminal to use the GitHub commands:</p>
+        <p>-To change the directory simply use:</p>
+        <p><code>cd &#x3C;name of the directory you want to change to></code></p>
+        <p>-To go to the folder “Downloads” use: <code>cd Downloads</code></p>
+      </li>
+      <li>
+        <p>Use the SSH repository link from out GitHub Repository and clone it to your local system as follows:</p>
+      </li>
+    </ol>
+    <p><code>git clone pastesshrepositorylinkhere</code></p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86911345-ce330180-c138-11ea-9f97-966489c07c72.png" alt="image">
+    </p>
+    <ol start="7">
+      <li>
+        <p>Now, the folder is copied to my ‘Downloads’. Just check the ‘Downloads’ have you got the folder demo.</p>
+        <ul>
+          <li>To check my folder, enter the folder using cd command again as:</li>
+        </ul>
+        <p><code>cd demo</code></p>
+      </li>
+      <li>
+        <p>
+          Get the list of the files in the folder demo, use:
+          For Windows: <code>dir </code>For Mac: <code>ls</code>
+        </p>
+      </li>
+    </ol>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86911459-f9b5ec00-c138-11ea-8d45-7da44bbc20c1.png" alt="image">
+    </p>
+    <ol start="9">
+      <li>
+        <p>
+          To view the content of the file:
+          For Windows: <code>type README.md</code>
+          For Mac: <code>cat README.md</code>
+        </p>
+      </li>
+      <li>
+        <p>
+          To open a README.md file:
+          For Windows: <code>notepad README.md</code>
+          For Mac: <code>open README.md</code>
+        </p>
+      </li>
+      <li>
+        <p>
+          To create a new file:
+          For Windows: <code>notepad test.txt</code>
+          For Mac: <code>vi test.txt</code>
+        </p>
+      </li>
+      <li>
+        <p>
+          Add to the repository:
+          For Windows/Mac: <code>git add test.txt</code>
+        </p>
+        <ul>
+          <li>Check the status of the file using:</li>
+        </ul>
+        <p><code>git status</code></p>
+      </li>
+    </ol>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86912050-ece5c800-c139-11ea-8046-99f987f9d644.png" alt="image">
+    </p>
+    <ol start="13">
+      <li>Commit the changes in the repository using:</li>
+    </ol>
+    <p><code>git commit -m “write message here”</code></p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86912336-6b426a00-c13a-11ea-8652-3df5246b5793.png" alt="image">
+    </p>
+    <ol start="14">
+      <li>Push the file to remote repository using:</li>
+    </ol>
+    <p><code>git push</code></p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86912378-801efd80-c13a-11ea-8ab2-ffafb2abbb02.png" alt="image">
+    </p>
+    <p>Now, this make the changes in my GitHub repository</p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86912441-9fb62600-c13a-11ea-85ed-df150393a285.png" alt="image">
+    </p>
+    <h2>Create a repository now without README.md file</h2>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86912607-eb68cf80-c13a-11ea-8a51-2569f53ccdd7.png" alt="image">
+    </p>
+    <ol start="15">
+      <li>
+        <p>Copy the SSHRepositoryLink on to your clipboard as did before</p>
+      </li>
+      <li>
+        <p>To come out from the demo folder first use</p>
+      </li>
+    </ol>
+    <p><code>cd ..</code></p>
+    <ol start="17">
+      <li>To make a directory in download folder:</li>
+    </ol>
+    <p>
+      <code>mkdir demo1</code>
+      <code>cd demo1</code>
+    </p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86913896-f886be00-c13c-11ea-8293-11d987521b2e.png" alt="image">
+    </p>
+    <ol start="18">
+      <li>To create a readmd file use</li>
+    </ol>
+    <p><code>echo "# demo1" >> README.md</code></p>
+    <ol start="19">
+      <li>Initialize the directory</li>
+    </ol>
+    <p><code>git init</code></p>
+    <ol start="20">
+      <li>Create and add a README.md file. You can use a normal text editor depending on which OS you are using.</li>
+    </ol>
+    <p><code>git add README.md</code></p>
+    <ol start="21">
+      <li>Check the status of the file</li>
+    </ol>
+    <p><code>git status</code></p>
+    <ol start="22">
+      <li>Commit the changes</li>
+    </ol>
+    <p><code>git commit -m "first commit"</code></p>
+    <ol start="23">
+      <li>Add the origin where we have to push the file. This is the SSHRepositoryLink you copied when you created the repository.</li>
+    </ol>
+    <p><code>git remote add origin git@github.com:mskill/demo1.git</code></p>
+    <ol start="24">
+      <li>Push the file</li>
+    </ol>
+    <p><code>git push -u origin master</code></p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86914009-31269780-c13d-11ea-8519-76d4103be861.png" alt="image">
+    </p>
+    <p>Now, the README.md file is created in our repository</p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86914078-51565680-c13d-11ea-9d36-752638d1725e.png" alt="image">
+    </p>
+    <h2>Author(s)</h2>
+    <h4>Malika Singla</h4>
+    <h4></h4>
+    <h3>Other Contributor(s)</h3>
+    <p>Lavanya</p>
+    <h2>Changelog</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2020-08-25</td>
+          <td>2.0</td>
+          <td>Lavanya</td>
+          <td>Migrated Lab to Markdown and added to course repo in GitLab</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2020. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>

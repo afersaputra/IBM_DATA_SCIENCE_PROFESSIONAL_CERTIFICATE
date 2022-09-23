@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/IDSNlogo.png" width="200" height="200">
+    <h3>LAB: Modeler Flows in IBM Watson Studio (Updated)</h3>
+    <p>For this lab, you will use the IBM Cloud Account and the Watson Studio project you created when you worked on the Lab in the previous lesson titled <em>Creating a Watson Studio Project with Jupyter Notebooks</em>. To create a free Watson Studio account, use the following link <a href="https://cloud.ibm.com/catalog/services/watson-studio?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0105ENSkillsNetwork20083975-2022-01-01" target="_blank" rel="external">https://cloud.ibm.com/catalog/services/watson-studio</a></p>
+    <p>Objective for Exercise:</p>
+    <ul>
+      <li>Load an example flow, run it, and examine results.</li>
+      <li>Add an Auto Numeric model, run it, and examine results.</li>
+      <li>Get predictions for new cases using a model we built.</li>
+    </ul>
+    <p><strong>Step 1</strong> - Open your project in Watson Studio, then click <strong>Assets</strong> tab and click <strong>Add to Project</strong></p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/image_assets.png" width="600">
+    <p>Scroll down and select <strong>SPSS Modeler</strong>.</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/image__29_.png" width="600">
+    <p><strong>Step 2</strong> - Next, select <strong>Gallery Sample</strong> and select <strong>Drug Study Example</strong>:</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/image__220_.png" width="600">
+    <p><strong>Step 3</strong> - Selecting the Drug study example on the left would give us the flow we have already seen in the previous section, then click "Create" button in the lower right corner.</p>
+    <p>Once the flow loads, you will see an image similar to this:</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/Screen_Shot_2021-01-07_at_10.51.11_AM.png" width="600">
+    <p><strong>Step 4</strong> - Reading from left to right, we can examine the flow. The purple circle corresponds to the data set of some fictional sales, the next node is deriving a field Increase that will be our target variable. It is based on the increase of sales. Then we see a type node which specifies our target variable and predictors. In this case our target variable is numeric and continuous. Finally, there are two models - a neural network and a C&#x26;RT decision tree. We can run the flow as is, or we can modify it to see other possibilities.</p>
+    <p><strong>Step 5</strong> - First, let's see what we can get with the existing models. Click <strong>Run</strong> button on the top of the canvas:</p>
+    <p><strong>Step 6</strong> - After some execution time, you'll get dark gold model nuggets for the two models. Clicking on three dots in the right side of one of them you can select "View model" and examine the information.</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/image__24_.png" width="600">
+    <p>For example, the neural network diagram looks like this:</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/image__25_.png" width="600">
+    <p><strong>Step 7</strong> - Now, let's add the "Auto-numeric" model to the flow. Open the modeling palette on the left side by clicking on Modeling:</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/image__26_.png" width="600">
+    <p><strong>Step 8</strong> - In the resulting modeling palette, pick the Auto-Numeric model:</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/Screen_Shot_2021-01-07_at_10.54.54_AM.png" width="600">
+    <p><strong>Step 9</strong> - Click on the Auto Numeric node and while keeping the left mouse button pressed, drag it onto the canvas.</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/Screen_Shot_2021-01-07_at_10.55.38_AM.png" width="600">
+    <p><strong>Step 10</strong> - Now, hover over the type node with your mouse and click on the circle with an arrow that appears on the right side. Make a connection to the dot on the left side of the Auto Numeric node.</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/image__28_.png" width="600">
+    <p><strong>Step 11</strong> - Double-click the "Auto-numeric" and click "Use custom field roles", use the drop-down to chose a target, we will use "Na_to_K". Click "Add Columns" next to Inputs to add inputs.</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/image_22copy.png" width="600">
+    <p><strong>Step 12</strong> - Check all. the fieldswe want to use for the input and click "OK" then "Save"</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/image__27_.png" width="600">
+    <p><strong>Step 13</strong> - Finally, run the new branch of the flow by clicking on the three dots on the upper right part of Auto Numeric node and selecting the last option in the menu, "Run".</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/Screen_Shot_2021-01-07_at_11.01.36_AM.png" width="600">
+    <p><strong>Step 14</strong> - After the execution ends, we get a model nugget:</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/Screen_Shot_2021-01-07_at_11.03.45_AM.png" width="600">
+    <p>and viewing the model, we see the following table:</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/Screen_Shot_2021-01-07_at_11.05.08_AM.png" width="600">
+    <p><strong>This tells us that five different models have been built, and also some properties of the models.</strong></p>
+    <p>
+      XGBoost is a very popular model, representing gradient-boosted ensemble of decision trees. The algorithm was discovered relatively recently and has been used in many solutions and winning data science competitions. In this case, it created a model with the highest accuracy, which "won" as well.
+      "C&#x26;RT" stands for Classification and Regression Tree", a decision tree algorithm that is widely used. This is the same decision tree we saw earlier when we built it separately.
+      "LE" is "linear engine", an IBM implementation of linear regression model that includes automatic interaction detection. The model coefficients are shown in <strong>Parameter Estimates</strong> table. We can see that several coefficients correspond to a combination of one category of variable <em>class</em> with continuous variable <em>Promotion</em>. This is called "an interaction effect". You will not see such features in simple linear regression models.
+    </p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module3/images/Screen_Shot_2021-01-07_at_11.06.41_AM.png" width="600">
+    <p><strong>Step 15</strong> - Now you can experiment with Modeler flows on your own. You can use various nodes, just don't forget to put a Type node before any modeling node and to specify your inputs and targets.</p>
+    <p>There are several other models to predict a continuous target, for categorical targets, you can try Logistic Ragression, Support Vector Machines etc.</p>
+    <p>You will learn more about various models when you take a course on Machine Learning.</p>
+    <h2>Author(s)</h2>
+    <h4>Aije Egwaikhide</h4>
+    <h4></h4>
+    <h2>Changelog</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2021-01-07</td>
+          <td>2.1</td>
+          <td>Aije</td>
+          <td>Created new example and updated screenshuots</td>
+        </tr>
+        <tr>
+          <td>2020-08-25</td>
+          <td>2.0</td>
+          <td>Lavanya</td>
+          <td>Migrated Lab to Markdown and added to course repo in GitLab</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2020. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>

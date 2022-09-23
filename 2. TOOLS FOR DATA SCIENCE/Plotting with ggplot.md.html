@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/IDSNlogo.png" width="200" height="200">
+    <p><strong>Objective for Exercise:</strong></p>
+    <p>This lab introduces you to plotting in R with <code>ggplot</code> and <code>GGally</code>. <code>GGally</code> is an extension of <code>ggplot2</code></p>
+    <p><strong>Exercise:</strong></p>
+    <ol>
+      <li>Click in the tiny <code>plus</code> symbol top left and select <code>R Script</code> to create a new R script if you dont have one open already.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/22-DS0105EN-2.png" width="600">
+    <ol start="2">
+      <li>We will use the iris dataset. If you don't have it loaded, please copy and paste the following into your R script file.</li>
+    </ol>
+    <pre><code class="hljs language-stylus"><span class="hljs-function"><span class="hljs-title">library</span><span class="hljs-params">(datasets)</span></span>
+<span class="hljs-function"><span class="hljs-title">data</span><span class="hljs-params">(iris)</span></span>
+</code></pre>
+    <ol start="3">
+      <li>In the previous lab, you installed the libraries necessary to create some nice plots let’s execute the following commands:</li>
+    </ol>
+    <pre><code class="hljs language-stylus"><span class="hljs-function"><span class="hljs-title">library</span><span class="hljs-params">(GGally)</span></span>
+<span class="hljs-function"><span class="hljs-title">ggpairs</span><span class="hljs-params">(iris, mapping=ggplot2::aes(colour = Species)</span></span>)
+</code></pre>
+    <ol start="4">
+      <li>Select the commands and click on run on the top. You’ll now see the following plot in the <strong>plots</strong> window:</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/28-DS0105EN-2.png" width="600">
+    <ol start="5">
+      <li>Click on <strong>Zoom</strong> icon on the plot window to zoom and see the plot.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/29-DS0105EN-2.png" width="600">
+    <ol start="6">
+      <li>This gives us a lot of information for a single line of code. First, we see the data distributions per column and species on the diagonal. Then we see all pair-wise scatter plots on the tiles left to the diagonal, again broken down by color. It is, for example, obvious to see that a line can be drawn to separate <strong>setosa</strong> against <strong>versicolor</strong> and <strong>virginica</strong>. In later courses, we’ll of course teach how the overlapping species can be separated as well. This is called supervised machine learning using non-linear classifiers by the way. Then you see the correlation between individual columns in the tiles right to the diagonal which confirms our thoughts that <strong>setose</strong> is more different, hence more easy to distinguish, than <strong>versicolor</strong> and <strong>virginica</strong> since a correlation value close to one signifies high similarity whereas a value closer to zero signifies less similarity. The remaining plots on the right are called <strong>box-plots</strong> and the ones at the bottom are called <strong>histograms</strong> bit we won’t go into detail here and save this for a more advanced course in this series.</li>
+    </ol>
+    <h2>Author(s)</h2>
+    <h4>Romeo</h4>
+    <h4></h4>
+    <h3>Other Contributor(s)</h3>
+    <h4>Lavanya</h4>
+    <h4></h4>
+    <h2>Change log</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2020-12-10</td>
+          <td>1.1</td>
+          <td>Aije</td>
+          <td>Created simplified version of the lab</td>
+        </tr>
+        <tr>
+          <td>2020-12-10</td>
+          <td>1.0</td>
+          <td>Malika Singla</td>
+          <td>Migrated lab to Markdown</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2020. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>

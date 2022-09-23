@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <center>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/IDSNlogo.png" width="300" alt="cognitiveclass.ai logo">
+    </center>
+    <p><strong>Effort: 20 mins</strong></p>
+    <h3>Objective</h3>
+    <p>In this lab, you will learn:</p>
+    <ol start="0">
+      <li>Import the notebook in Watson Studio</li>
+    </ol>
+    <base target="_blank">
+    <h2>IBM Project Creation in Watson</h2>
+    <blockquote>
+      <p>Note: If you have not created watson service , please follow the steps mentioned <a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/IBM_Cloud_Account_Setup.md.html?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDS0321ENSkillsNetwork26802033-2022-01-01">here.</a></p>
+    </blockquote>
+    <h3>Step 1: For Existing Users (who already have Watson Service):</h3>
+    <p>Go to the IBM Cloud Dashboard and click <strong>Services.</strong></p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/FinalModule_Coursera/images/F7_Service.png" alt="image">
+    </p>
+    <p>When you click on Services, all your existing services will be shown in the list. Click the <strong>Watson Studio</strong> service you created:</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/FinalModule_Coursera/images/F8_Selectwatson.png" alt="image">
+    </p>
+    <p>Then click <strong>Get Started.</strong></p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/FinalModule_Coursera/images/F6_GetStarted.png" alt="image">
+    </p>
+    <p><strong>Step 3: Creating a Project</strong></p>
+    <p>Now you have to Create a project.</p>
+    <p>Click on <strong>Create a project:</strong></p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/FinalModule_Coursera/images/F9_Create_project.png" alt="image">
+    </p>
+    <p>On the Create a project page, click <strong>Create an empty project</strong></p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/FinalModule_Coursera/images/F9_EmptyProject.png" alt="image">
+    </p>
+    <p>Provide a <strong>Project Name</strong> and <strong>Description</strong>, as shown below:</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/FinalModule_Coursera/images/F10_ProjectDetails.png" alt="image">
+    </p>
+    <p>You must also create storage for the project.</p>
+    <p>Click <strong>Add</strong></p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/FinalModule_Coursera/images/F11_AddStorage.png" alt="image">
+    </p>
+    <p>On the Cloud Object Storage page, scroll down and then click <strong>Create.</strong></p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/FinalModule_Coursera/images/F12_StorageLite.png" alt="image">
+    </p>
+    <p>In the Confirm Creation box, click <strong>Confirm.</strong></p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/FinalModule_Coursera/images/F13_Confirm.png" alt="image">
+    </p>
+    <p>On the New project page, note that the storage has been added, and then click <strong>Create.</strong></p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/FinalModule_Coursera/images/F14_AddProject.png" alt="image">
+    </p>
+    <p>After creating the project you will need to add a Jupyter notebook to your project. Instructions for this are provided in a subsequent lab.</p>
+    <h2>Author(s)</h2>
+    <h4>Joseph Santarcangelo</h4>
+    <h4></h4>
+    <h2>Change log</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2021-08-18</td>
+          <td>2.5</td>
+          <td>Lakshmi Holla</td>
+          <td>Removed the step 1</td>
+        </tr>
+        <tr>
+          <td>2021-06-03</td>
+          <td>2.4</td>
+          <td>Lakshmi Holla</td>
+          <td>Forked from original</td>
+        </tr>
+        <tr>
+          <td>2021-01-25</td>
+          <td>2.3</td>
+          <td>Rav Ahuja</td>
+          <td>Forked from original and split Jupyter notebook instructions in separate lab</td>
+        </tr>
+        <tr>
+          <td>2020-11-18</td>
+          <td>2.2</td>
+          <td>Malika Singla</td>
+          <td>Updated the screenshot</td>
+        </tr>
+        <tr>
+          <td>2020-10-05</td>
+          <td>2.1</td>
+          <td>Malika Singla</td>
+          <td>Updated the Effort and Objective</td>
+        </tr>
+        <tr>
+          <td>2020-09-05</td>
+          <td>2.0</td>
+          <td>Malika Singla</td>
+          <td>Updated the screenshot</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2021. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>

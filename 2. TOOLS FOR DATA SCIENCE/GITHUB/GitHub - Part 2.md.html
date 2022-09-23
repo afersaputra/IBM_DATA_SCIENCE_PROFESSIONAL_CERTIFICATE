@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/IDSNlogo.png" width="200" height="200">
+    <h2>Add file to Repository in GitHub</h2>
+    <p><strong>Objective for Exercise</strong></p>
+    <ul>
+      <li>To add file to repository on GitHub</li>
+      <li>To add file to repository on GitHub through command line</li>
+    </ul>
+    <p><em>Note: These instructions works on BASH terminal on Windows &#x26; Mac terminals.</em></p>
+    <p>Click 'Add file' to add a file</p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86914757-726b7700-c13e-11ea-8411-dbe00b06171c.png" alt="image">
+    </p>
+    <p>Provide the file name and add a description to that file. To commit the changes in the repository, click ‘Commit New File’</p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86914831-9464f980-c13e-11ea-869e-71569f13011f.png" alt="image">
+    </p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86914872-a6df3300-c13e-11ea-8c0f-b71f95601af2.png" alt="image">
+    </p>
+    <p>Adding a file remotely will not be there in the local directory. Check the files using <code>dir</code></p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86915095-04737f80-c13f-11ea-944a-2c7cf9f06e8e.png" alt="image">
+    </p>
+    <p>As per the screenshot above, there is 1 file in the repository.</p>
+    <p>
+      To pull the file that is added in remote repository to local repository, we use PULL command
+      <code>git pull</code>
+    </p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86915220-3b499580-c13f-11ea-9ca1-1a520fbd61cc.png" alt="image">
+    </p>
+    <p>After pull, if I check the local repository using dir, there are 2 files as shown:</p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86915357-7cda4080-c13f-11ea-8550-19deeacc42a9.png" alt="image">
+    </p>
+    <p>
+      To add a branch in master branch
+      <code>git branch branchname</code>
+    </p>
+    <p>
+      Switch the branch
+      <code>git checkout branchname</code>
+    </p>
+    <p>
+      Adding a file in branch
+      <code>echo "#content">> filename.txt</code>
+    </p>
+    <p>
+      Then add the file and push the file. To create the branch remotely we have to use
+      <code>git push --set-upstream origin branchname</code>
+    </p>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86916988-07bc3a80-c142-11ea-88c3-e395f9cfc9b3.png" alt="image">
+    </p>
+    <p>
+      Switch the branch again to the master using
+      <code>git checkout master</code>
+    </p>
+    <p>
+      Merge command to merge the branches
+      <code>git merge mybranch</code>
+    </p>
+    <p>
+      As the merge command is used the new create branch will be merged to the master branch and the file will be inserted to it. Previously, we have 2 file in the master, now there are 3 files. Make sure to push the files using <code>git push</code>
+      <img src="https://user-images.githubusercontent.com/25001852/86917132-3e925080-c142-11ea-859b-1652369ddd8b.png" alt="image">
+    </p>
+    <p>
+      Now, the file which is in the branch, is now in the master branch
+      
+      <img src="https://user-images.githubusercontent.com/25001852/86917264-68e40e00-c142-11ea-8f75-934002d6e1ab.png" alt="image">
+    </p>
+    <h2>Author(s)</h2>
+    <h4>Malika Singla</h4>
+    <h4></h4>
+    <h3>Other Contributor(s)</h3>
+    <p>Lavanya</p>
+    <h2>Changelog</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2020-08-25</td>
+          <td>2.0</td>
+          <td>Lavanya</td>
+          <td>Migrated Lab to Markdown and added to course repo in GitLab</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2020. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/IDSNlogo.png" width="300">
+    <h2>Objective</h2>
+    <p>At the end of this lab you will be able to:</p>
+    <ul>
+      <li>Execute bash commands on Windows</li>
+    </ul>
+    <h2>GitBash - Introduction</h2>
+    <p>Git Bash for Windows is a package that includes git and bash.</p>
+    <p>Git is an open-source version control system for tracking source code changes when developing software. It keeps a commit history which allows you to revert to a stable state in case you mess up your code. Git also allows multiple developers to collaborate on the same code base.</p>
+    <p>Bash is a Unix command-line shell. The name is an acronym for the ‘Bourne-Again Shell’. It comes with useful Unix commands like cat, ssh, SCP, etc., which are not usually found on Windows.</p>
+    <p>Installation Steps:</p>
+    <ul>
+      <li>Open the link <a href="https://git-scm.com/downloads?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0105ENSkillsNetwork20083975-2022-01-01" target="_blank" rel="external">https://git-scm.com/downloads</a></li>
+      <li>Click on the operating system to download GitBash accordingly. Click 'Download' as shown below:</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash1.PNG" alt="image">
+    </p>
+    <p>You will be redirected to a new page and it started downloading.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash2.PNG" alt="image">
+    </p>
+    <p><b>NOTE:</b> If the download doesn't start, click on the option 'Click here to download manually'</p>
+    <ul>
+      <li>Click on NEXT.</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash3.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Choose the components you want to install, or you can just proceed with the default options and click “Next.</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash4.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Click “Next”.</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash5.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Choose the components Let Git decide, or you can just proceed with the default options and click “Next”.</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash6.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Choose the option you want depending on where you want to use Git and click “Next”..</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash7.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Select “Use bundled OpenSSH” and click “Next”..</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash8.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Select “Use the OpenSSL library” and click “Next”..</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash9.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Configure the Line Ending Conversions. Go with the default option “Checkout Windows-Style, commit Unix-style line endings”. Click “Next” to proceed.</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash10.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Configure the Terminal Emulator to use with Git Bash. Default option “Use MinTTY(the default terminal of MSYS2) and click “Next”.</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash11.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Select the Default Behavior.</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash12.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Select the Credential Manager.</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash13.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Select the features you want(the default options are fine) and click “Next”.</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash14.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Enable experimental options if you want. Enabling them allows you to try out newer features that are still in development</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash15.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Wait for the installation to complete Git Setup Wizard</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash16.PNG" alt="image">
+    </p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash17.PNG" alt="image">
+    </p>
+    <ul>
+      <li>Release notes will be displayed</li>
+    </ul>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/git-bash18.PNG" alt="image">
+    </p>
+    <ul>
+      <li>The Git Bash terminal will now open and you will be able to enter Git and Bash commands.</li>
+    </ul>
+    <p>
+      <img src="https://user-images.githubusercontent.com/25001852/86886947-71721f80-c115-11ea-9245-2d30814fb39a.png" alt="image">
+    </p>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/IDSNlogo.png" width="200" height="200">
+    <p><strong>Objective for Exercise:</strong></p>
+    <p>This lab introduces you to R and RStudio</p>
+    <p><strong>Exercise:</strong></p>
+    <ol>
+      <li>Click in the tiny <code>plus</code> symbol top left and select <code>R Script</code></li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/22-DS0105EN-2.png" width="600">
+    <ol start="2">
+      <li>An untitled R Script panel opens. It would look like this.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/23-DS0105EN-2.png" width="600">
+    <ol start="3">
+      <li>Now we load the iris dataset. Please enter the following lines into the editor window which just appeared. Then select them all such that they turn blue. Then click on the tiny <code>Run</code> icon just above the editor window.</li>
+    </ol>
+    <pre><code class="hljs language-stylus">library (datasets)
+<span class="hljs-function"><span class="hljs-title">data</span><span class="hljs-params">(iris)</span></span>
+<span class="hljs-function"><span class="hljs-title">View</span><span class="hljs-params">(iris)</span></span> 
+</code></pre>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/24-DS0105EN-2.png" width="600">
+    <ol start="4">
+      <li>You are directly taken to the data view tab to inspect your dataset. We can see that there are five columns in this data set and that the first four are floating point and the last one is label of data type string which contains the category value of our data set. We also see that we have 150 entries in total of which we are seeing the first 19.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/25-DS0105EN-2.png" width="600">
+    <ol start="5">
+      <li>Now let's find how many different species there are present in the data set. Type the following command into the editor window and click the run.</li>
+    </ol>
+    <pre><code class="hljs language-stylus"><span class="hljs-function"><span class="hljs-title">unique</span><span class="hljs-params">(iris<span class="hljs-variable">$Species</span>)</span></span>
+</code></pre>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/26-DS0105EN-2.png" width="600">
+    <p>In the Console window at the bottom you’ll see the result of the executed command and will know that there are only three different species present in the data set.</p>
+    <ol start="6">
+      <li>
+        <p>Now it’s time to look into the data set in more detail.</p>
+      </li>
+      <li>
+        <p>Open a Console.</p>
+      </li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/Console.png" width="75%">
+    <ol start="8">
+      <li>Run the following command in the console.</li>
+    </ol>
+    <pre><code class="hljs language-nix">install.packages(<span class="hljs-string">"GGally"</span>, <span class="hljs-attr">repos</span> = <span class="hljs-string">"https://cran.r-project.org"</span>, <span class="hljs-attr">type=</span> <span class="hljs-string">"source"</span>) 
+</code></pre>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/command.png" width="75%">
+    <ol start="9">
+      <li>Click <em>Enter</em> to install the packages.</li>
+    </ol>
+    <p>This concludes this lab, I hope you’ve enjoyed it!</p>
+    <h2>Author(s)</h2>
+    <h4>Romeo</h4>
+    <h4></h4>
+    <h3>Other Contributor(s)</h3>
+    <h4>Lavanya</h4>
+    <h4></h4>
+    <h2>Change log</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2021-13-01</td>
+          <td>2.4</td>
+          <td>Malika Singla</td>
+          <td>Update the installation for R packages</td>
+        </tr>
+        <tr>
+          <td>2020-12-10</td>
+          <td>2.3</td>
+          <td>Aije</td>
+          <td>Moved plot steps to a new lab</td>
+        </tr>
+        <tr>
+          <td>2020-12-10</td>
+          <td>2.2</td>
+          <td>Malika Singla</td>
+          <td>Update the installation for R packages</td>
+        </tr>
+        <tr>
+          <td>2020-12-07</td>
+          <td>2.1</td>
+          <td>Aije</td>
+          <td>Changed instructions to use Skills Network Lab</td>
+        </tr>
+        <tr>
+          <td>2020-08-25</td>
+          <td>2.0</td>
+          <td>Lavanya</td>
+          <td>Migrated Lab to Markdown and added to course repo in GitLab</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2020. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>

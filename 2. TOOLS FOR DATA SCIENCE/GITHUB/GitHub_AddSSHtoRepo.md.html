@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/IDSNlogo.png" width="200" height="200">
+    <h3>Adding SSH Key to GitHub</h3>
+    <p><b>Effort:</b> 15 min</p>
+    <h2>Objective:</h2>
+    <p>Adding an SSH key to GitHub.</p>
+    <h2>Pre-requisites</h2>
+    <p>This hands-on lab requires you to generate SSH key, as illustrated in the <a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/GitHub_SSHKey.md.html" target="_blank" rel="external">previous lab</a></p>
+    <h2>Steps to Add SSH Key</h2>
+    <p>Open GitBash to copy the SSH key previously generated.</p>
+    <p>Step 1: Copy the command using the below command:</p>
+    <p><code>cat ~/.ssh/id_rsa.pub | clip</code></p>
+    <p><b>NOTE:</b> If clip doesn't work, use <code>cat ~/.ssh/id_rsa.pub</code> on command line and the copy the output.</p>
+    <p>Step 2: Now, Open GitHub and go to <code>Setting</code> (Click on the arrow)</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/settings.png" alt="image">
+    </p>
+    <p>Step 3: Under Personal settings, select <code>SSH and GPG keys</code>, as shown below:</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/SSHKey_option_new.png" alt="image">
+    </p>
+    <p>Step 4: Click the button to add a <code>New SSH key</code>.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/AddNewSSH.png" alt="image">
+    </p>
+    <p>Step 5: Provide the title. Then select the Key field, and press Ctrl-v to paste the key from the clipboard buffer. The pasted key should have <b>your email address</b> at the end, as shown below:</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/add_ssh_keytoaccount_new.png" alt="image">
+    </p>
+    <p>and click <code>Add SSH Key</code>.</p>
+    <p>Now, the SSH key is added to your account.</p>
+    <h2>Summary</h2>
+    <p>In this document, you have learned how to add SSH key to GitHub.</p>
+    <h2>Author(s)</h2>
+    <h4>Malika Singla</h4>
+    <h4></h4>
+    <h2>Changelog</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2020-07-16</td>
+          <td>0.2</td>
+          <td>Malika Singla</td>
+          <td>Spell check, screenshot updated and steps added</td>
+        </tr>
+        <tr>
+          <td>2020-07-15</td>
+          <td>0.1</td>
+          <td>Malika Singla</td>
+          <td>Initial version created</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2020. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>

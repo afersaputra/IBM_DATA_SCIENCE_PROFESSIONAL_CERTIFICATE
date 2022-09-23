@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <center>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/IDSNlogo.png" width="300" alt="cognitiveclass.ai logo">
+    </center>
+    <h2>Hands-on Lab: Publishing notebooks from Watson to Github</h2>
+    <p><strong>Effort: 20 mins</strong></p>
+    <h5>Step 1: Click on the <strong>Get Started</strong> Link of Watson Studio to navigate to the page where projects are listed.</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/GetStarted.png" alt="image">
+    </p>
+    <h5>Step 2: Next click on the project which you want to integrate with github. This is the project containing your notebooks to be published on Github.</h5>
+    <p><em><strong>Note:This is just an example of a project . The project names will differ according what you have created.</strong></em></p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/projectlink.png" alt="image">
+    </p>
+    <h5>Step 3: Next click on the <strong>Settings</strong> Tab and scroll down to check the <strong>Integrations</strong> section.</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/settings.png" alt="image">
+    </p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/integrations.png" alt="image">
+    </p>
+    <h5>Step 4:Click on the GitHub repository on the integrations section .When you click on the textbox under the Repository url you will get the error as shown below:</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/gitintegrationerror.png" alt="image">
+    </p>
+    <p><strong>To create and configure the personal access token follow the subsequent steps.</strong></p>
+    <h5>Step 5:Next click on Profiles and Settings right below your initials on the top right screen.</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/profilesandsettings.png" alt="image">
+    </p>
+    <h5>Step 6:Click on the gitIntegrations tab.</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/gitintegration.png" alt="image">
+    </p>
+    <h5>Step 7:Click on personal access token. This will prompt you to enter your github password and login to github.</h5>
+    <p>Later create a token by specifying the name in the <strong>Note</strong> and choose <strong>repo</strong> scope.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/personalaccesstoken.png" alt="image">
+    </p>
+    <p>Scroll down and click <strong>‘Generate Token’</strong>.</p>
+    <h5>Step 8: <strong>Copy</strong> the token generated.</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/copytoken.png" alt="image">
+    </p>
+    <h5>Step 9: Paste it under the <strong>Personal Access token</strong> in the Git Integrations tab of Watson and click on save.</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/tokencopied.png" alt="image">
+    </p>
+    <h5>Step 10: Go back to your github repository by clicking this <a href="https://github.com/?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDS0321ENSkillsNetwork26802033-2022-01-01">link</a>.</h5>
+    <h5>Select your repository on the left pane.</h5>
+    <h5>Create a branch called <strong>master</strong> under your repository.</h5>
+    <h5>Step 11: Click the button on the left side of your screen that shows the current branch as "<strong>main</strong>" and has a dropdown arrow.</h5>
+    <h5>Step 12: Create a new branch called "<strong>master</strong>"</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/master.png" alt="image">
+    </p>
+    <p><strong>This is necessary because when you connect a repository to a project in Watson Studio and try to publish a notebook to GitHub, it automatically pushes your notebook to the master branch. If you only have a main branch in your repository and not one titled "master," Watson will not have anywhere to push your notebook.</strong></p>
+    <h5>Step 13: Once done with this step navigate to your project on watson by clicking the Navigation menu.</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/NavigationMenu.png" alt="image">
+    </p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/projectlink2.png" alt="image">
+    </p>
+    <h5>Step 14: Go to the <strong>settings</strong> tab and provide the github link of your repository.</h5>
+    <p>If you have not yet created the repository follow the steps given in the link <a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/GitHub1_Getting_Started.md.html?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDS0321ENSkillsNetwork26802033-2022-01-01">Github Repository Creation</a> for creating a repository.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/update.png" alt="image">
+    </p>
+    <p>If <strong>update</strong> is not enabled, click outside text box which will enable it and then click <strong>‘Update’</strong>.</p>
+    <h5>Step 15: Navigate to the <strong>Assets</strong> tab of your project and then click on the notebook which you want to publish.</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/Assets.png" alt="image">
+    </p>
+    <p>This will open your notebook.</p>
+    <h5>Step 16: Click on the <strong>edit</strong> option to edit your notebook.</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/notebookedit.png" alt="image">
+    </p>
+    <h5>Step 17: Select <strong>Publish on github</strong>.</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/githubintegration.png" alt="image">
+    </p>
+    <h5>Step 18: Next click on <strong>Publish</strong> to publish your notebook</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/Publishongithub.png" alt="image">
+    </p>
+    <h5>Step 19: This will publish your notebook to github.</h5>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/images/Published.png" alt="image">
+    </p>
+    <h2>Author(s)</h2>
+    <h4>Joseph Santarcangelo</h4>
+    <h4></h4>
+    <h2>Other Contributor(s)</h2>
+    <p>Lakshmi Holla</p>
+    <h2>Change log</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2021-06-03</td>
+          <td>0.1</td>
+          <td>Lakshmi Holla</td>
+          <td>Inital Version</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2021. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>
